@@ -1,0 +1,32 @@
+
+//*** THEME CONFIG ***//
+@import "configs";
+
+
+//*** VENDOR ***//
+
+//- Bootstrap 4.0.0-alpha.4 -//
+@import "../../../components/bootstrap/scss/bootstrap";
+
+//- Font Awesome 4.6.3 -//
+@import "../../../components/font-awesome/scss/font-awesome";
+
+//- FullPage 2.8.6 -//
+@import "../../../components/fullpage.js/jquery.fullPage.scss";
+
+//- nanoScroller 0.8.7 -//
+//@import "../../../components/nanoscroller/bin/css/nanoscroller.scss";
+
+//- Magnific Popup 1.1.0 -//
+@import "../../../components/magnific-popup/src/css/main.scss";
+
+
+//*** Firmino.us (Custom Modules) ***//
+@import "buttons";
+@import "navbar";
+@import "card";
+@import "utilities-background";
+
+
+// THEME CUSTOM (Firmino.us Custom Styles)
+@import "custom";

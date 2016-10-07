@@ -1,0 +1,31 @@
+{
+  "name": "firminous",
+  "authors": [
+    "Joao Firmino <firminoata@gmail.com>"
+  ],
+  "description": "Firmino.us Website",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Bootstrap",
+    "4",
+    "sass",
+    "skin",
+    "theme",
+    "CSS",
+    "retina",
+    "offcanvas",
+    "animations"
+  ],
+  "license": "MIT",
+  "homepage": "http://firmino.us",
+  "devDependencies": {
+    "bootstrap": "4.0",
+    "font-awesome": "fontawesome#^4.6.3",
+    "scrollreveal": "^3.2.0",
+    "fullpage.js": "^2.8.6",
+    "isotope": "^3.0.1",
+    "nanoscroller": "^0.8.7",
+    "magnific-popup": "^1.1.0"
+  }
+}

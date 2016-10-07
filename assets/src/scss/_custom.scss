@@ -1,0 +1,211 @@
+//-- Custom --//
+
+.text-opac {
+	opacity: .75;
+}
+
+.fullpage-wrapper {
+	overflow: hidden;
+/*   transition: all 0.5s ease-in-out 0s; nanoScroller
+&.nano-open {
+  transform: scale(0.0);
+} */
+}
+
+.fp-section {
+	z-index: 10;
+}
+
+.fp-tableCell {
+	z-index: 1;
+}
+
+.cover-bg {
+    background: 50% no-repeat;
+    background-image: url('../../images/contact-bg.jpg');
+    background-size: cover;
+    opacity: .2;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.d-table {
+	display: table;
+}
+
+/////
+
+/* OffSet Navigation */
+.nav-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: none;
+  z-index: 1999;
+}
+
+.nav-offset {
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -260px;
+  transition: all .5s;
+  z-index: 9999;
+  overflow: auto;
+  opacity: 0;
+}
+
+.nav-offset .nav-pills .nav-link {
+  color: rgba(255,255,255,.65);
+}
+
+.nav-offset .nav-pills .nav-link:focus, 
+.nav-offset .nav-pills .nav-link:hover, 
+.nav-offset .nav-pills .nav-link.active, 
+.nav-offset .nav-pills .nav-link.active:focus, 
+.nav-offset .nav-pills .nav-link.active:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.2);
+}
+
+.nav-opened {
+  position: relative;
+}
+
+.nav-opened .nav-overlay {
+  display: block;
+}
+
+.nav-opened .nav-offset {
+  opacity: 1;
+  transform: translate3d(-260px, 0, 0);
+}
+
+/* Isotope */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item,
+.grid-sizer {
+  max-width: 160px;
+}
+
+.grid-item {
+  float: left;
+  border-color: hsla(0, 0%, 0%, 0.7);
+  a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    .hover-desc {
+      position: absolute;
+      background-color: rgba(217, 83, 79, .85);
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all .5s ease-in-out 0s;
+      top: 0;
+      bottom: 0;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      .hover {
+        color: #fff;
+        margin-top: 25%;
+        text-align: center;
+      }
+    }
+    &:hover {
+      .hover-desc {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+}
+
+/*** Scroll ***/
+/* .nano {
+  &.nano-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(217, 83, 79, .5);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+} */
+
+
+
+/////
+
+@include media-breakpoint-down(sm) {
+
+    .grid-item,
+    .grid-sizer {
+      max-width: 25%;
+    }
+
+    .fp-controlArrow.fp-prev {
+      border-width: 18.5px 14px 18.5px 0;
+      border-color: transparent #000 transparent transparent;
+    }
+
+    .fp-controlArrow.fp-next {
+      border-width: 18.5px 0 18.5px 14px;
+      border-color: transparent transparent transparent #000;
+    }
+
+
+    .display-3,
+    .display-4,
+    .h1,
+    h1 {
+        font-size: 2rem;
+    }
+
+    img.exp {
+        max-height: 30px;
+    }
+
+    .lead {
+        font-size: 1.15rem;
+    }
+
+    .section .card {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@include media-breakpoint-down(xs) {
+	.foliobox {
+		position : relative !important;
+		left: 0 !important;
+    	top: 0 !important;
+	}
+}

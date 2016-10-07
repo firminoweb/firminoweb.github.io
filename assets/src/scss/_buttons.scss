@@ -1,0 +1,37 @@
+//-- Buttons --//
+
+// Alternate Buttons
+.btn-inverse {
+  @include button-variant(#fff, $gray-dark, $gray-dark);
+}
+
+.btn-light {
+  @include button-variant($gray-dark, #fff, #fff);
+}
+
+// btn-light fix
+.btn-light {
+	color: $gray-dark !important;
+}
+
+// Outline Alternate Buttons
+.btn-outline {
+  @include button-outline-variant($gray-light);
+}
+
+.btn-outline-inverse {
+  @include button-outline-variant($gray-dark);
+}
+
+.btn-outline-light {
+  @include button-outline-variant(#fff);
+}
+
+.btn-outline-light {
+	&.active,
+	&:active,
+	&:focus,
+	&:hover {
+		color: $gray-dark;
+	}
+}

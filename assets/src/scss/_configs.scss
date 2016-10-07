@@ -1,0 +1,84 @@
+//== Default Theme variables and configs ==//
+
+//-- Paths
+$path_bower:     "../../../components"; //customize you own bower components path ;)
+$fa-font-path:   "../../../components/font-awesome/fonts";
+
+//-- Breakpoints
+
+//-- Grid containers
+
+//$grid-columns:               12 !default;
+//$grid-gutter-width:          1.875rem !default; // 30px
+
+// Dark and Fade BS pre-defined standards
+
+$gray-dark:                 #3a4651;
+$gray-light:                #818a91;
+
+$gray-lightest:             #f5f5f5;
+
+
+//-- Theme Default Standards*
+$brand-primary:            #1976D2; // #1976D2
+$brand-secondary:          $gray-light; //#7952b3
+
+$brand-success:            #689F38;
+$brand-info:               #4fc3f7;
+$brand-warning:            #FBC02D;
+//$brand-danger:   		   #e02512; //e25440
+
+// Secondary BS pre-defined standards
+$btn-secondary-color:            #fff;
+$btn-secondary-bg:               $brand-secondary;
+$btn-secondary-border:           $btn-secondary-bg;
+
+// Components
+$component-active-color: $brand-primary;
+$component-active-bg:    #fff;
+
+
+//-- Enable-Disable Bootstrap Features*
+$enable-flex:               true;
+$enable-transitions:        true;
+$enable-shadows:            false;
+$enable-gradients:          false;
+// $enable-rounded:            true;
+
+//$theme-border-width:     2px;
+//$theme-border-radius:      1rem;
+
+// Navbar*
+$navbar-light-color:       $gray-dark;
+$navbar-light-hover-color: lighten($gray-dark, 10%);
+$navbar-dark-color:        rgba(255,255,255,.8);
+$navbar-dark-hover-color:  rgba(255,255,255,.95);
+//$navbar-border-radius: 	   $theme-border-radius;
+
+$navbar-light-active-color: lighten($gray-dark, 10%);
+
+
+// Button*
+//$btn-border-radius:        $theme-border-radius;
+//$btn-border-radius-lg:	   $theme-border-radius;
+//$btn-border-radius-sm:     $theme-border-radius;
+
+// Input*
+//$input-btn-border-width:   $theme-border-width;
+//$input-border-radius:      $theme-border-radius;
+//$input-border-radius-lg:   $theme-border-radius;
+//$input-border-radius-sm:   $theme-border-radius;
+
+// Dropdown*
+//$dropdown-border-width:    $theme-border-width;
+
+// List Group
+//$list-group-border-color: #ccc;
+
+// Card*
+//$card-border-width: 	   $theme-border-width;
+//$card-border-radius:       $theme-border-radius;
+//$card-border-color: #ccc;
+
+
+
